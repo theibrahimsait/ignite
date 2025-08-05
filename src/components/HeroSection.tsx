@@ -86,8 +86,8 @@ export const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
         </div>
       </div>
 
-      {/* Scroll Indicator - at very bottom of hero section */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+      {/* Scroll Indicator - at very bottom of hero section with mobile spacing */}
+      <div className="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2">
         <div className="w-6 h-10 border-2 border-primary/30 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-bounce"></div>
         </div>
