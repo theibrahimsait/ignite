@@ -42,7 +42,7 @@
     --gold: 46 100% 50%;               /* Keep original yellow */
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--dark-blue)), hsl(var(--light-blue)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(var(--muted)));
     --gradient-cta: linear-gradient(135deg, hsl(var(--light-blue)), hsl(var(--turquoise)));
     --gradient-accent: linear-gradient(135deg, hsl(var(--turquoise)), hsl(var(--gold)));
     --gradient-glow: radial-gradient(circle at center, hsl(var(--light-blue) / 0.3), transparent 50%);
