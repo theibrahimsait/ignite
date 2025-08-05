@@ -9,7 +9,7 @@ export const Footer = () => {
             {/* Brand & Event Info */}
             <div className="lg:col-span-2">
             <div className="flex items-center mb-4">
-              <img src="/src/assets/ignighted-logo.svg" alt="IgKnightED'25" className="h-8 w-auto" />
+              <img src="/ignighted-logo.svg" alt="IgKnightED'25" className="h-8 w-auto" />
             </div>
               
               <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -99,8 +99,8 @@ export const Footer = () => {
           {/* Powered by */}
           <div className="text-center mt-6 pt-6 border-t border-border">
             <div className="flex justify-center items-center gap-8 opacity-60">
-              <img src="/src/assets/bit-logo.svg" alt="BIT'25" className="h-8 w-auto" />
-              <img src="/src/assets/submark.svg" alt="Event Submark" className="h-6 w-auto" />
+              <img src="/bit-logo.svg" alt="BIT'25" className="h-8 w-auto" />
+              <img src="/submark.svg" alt="Event Submark" className="h-6 w-auto" />
             </div>
           </div>
         </Card>

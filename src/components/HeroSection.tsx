@@ -77,7 +77,7 @@ export const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
           <div className="relative">
             <div className="flex justify-center items-center">
               <img 
-                src="/src/assets/bit-logo.svg" 
+                src="/bit-logo.svg" 
                 alt="BIT'25" 
                 className="h-20 w-auto filter brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
               />
