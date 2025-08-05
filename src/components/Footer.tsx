@@ -9,7 +9,7 @@ export const Footer = () => {
             {/* Brand & Event Info */}
             <div className="lg:col-span-2">
             <div className="flex items-center mb-4">
-              <img src="/lovable-uploads/1abf5f86-ba86-49e9-9783-667460b57abe.png" alt="IgKnightED'25" className="h-8 w-auto" />
+              <img src="/ignighted-logo.svg" alt="IgKnightED'25" className="h-8 w-auto" />
             </div>
               
               <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -99,8 +99,8 @@ export const Footer = () => {
           {/* Powered by */}
           <div className="text-center mt-6 pt-6 border-t border-border">
             <div className="flex justify-center items-center gap-8 opacity-60">
-              <img src="/lovable-uploads/f021ff76-8be7-4ac8-8837-a36fc538b65a.png" alt="BIT'25" className="h-8 w-auto" />
-              <img src="/lovable-uploads/cd25fe33-c698-468e-833b-e785a4488f46.png" alt="Event Submark" className="h-6 w-auto" />
+              <img src="/bit-logo.svg" alt="BIT'25" className="h-8 w-auto" />
+              <img src="/submark.svg" alt="Event Submark" className="h-4 w-auto opacity-60" />
             </div>
           </div>
         </Card>
