@@ -36,16 +36,16 @@
     --ring: 197 100% 50%;                  /* Electric Blue ring */
 
     /* Custom Tokens */
-    --electric-blue: 197 100% 50%;
-    --gold: 46 100% 50%;
-    --dark-navy: 210 11% 4%;
-    --elevated-dark: 210 10% 8%;
-    --glass-bg: 210 10% 6% / 0.8;
+    --light-blue: 201 93% 47%;         /* #027CC6 */
+    --dark-blue: 216 100% 21%;         /* #002B6A */
+    --turquoise: 178 90% 49%;          /* #14E3D5 */
+    --gold: 46 100% 50%;               /* Keep original yellow */
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--dark-navy)), hsl(var(--elevated-dark)));
-    --gradient-cta: linear-gradient(135deg, hsl(var(--electric-blue)), hsl(var(--gold)));
-    --gradient-glow: radial-gradient(circle at center, hsl(var(--electric-blue) / 0.3), transparent 50%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--dark-blue)), hsl(var(--light-blue)));
+    --gradient-cta: linear-gradient(135deg, hsl(var(--light-blue)), hsl(var(--turquoise)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--turquoise)), hsl(var(--gold)));
+    --gradient-glow: radial-gradient(circle at center, hsl(var(--light-blue) / 0.3), transparent 50%);
     
     /* Shadows */
     --shadow-glow: 0 0 40px hsl(var(--electric-blue) / 0.4);
