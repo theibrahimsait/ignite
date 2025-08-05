@@ -37,7 +37,7 @@ export const Navigation = ({ activeSection, onSectionChange }: NavigationProps) 
         {/* Logo */}
         <div className="flex items-center">
           <img 
-            src="/ignighted-logo.svg" 
+            src="/lovable-uploads/1abf5f86-ba86-49e9-9783-667460b57abe.png" 
             alt="IgKnightED'25" 
             className="h-8 w-auto"
           />
