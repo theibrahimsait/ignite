@@ -79,7 +79,7 @@ export const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
               <img 
                 src="/bit-logo.svg" 
                 alt="BIT'25" 
-                className="h-20 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                className="h-32 w-auto filter brightness-0 invert transition-opacity"
               />
             </div>
           </div>
