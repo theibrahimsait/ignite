@@ -35,15 +35,12 @@ export const Navigation = ({ activeSection, onSectionChange }: NavigationProps) 
     }`}>
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center">
           <img 
             src="/src/assets/ignighted-logo.svg" 
             alt="IgKnightED'25" 
             className="h-8 w-auto"
           />
-          <div className="text-xl font-heading font-bold gradient-text">
-            IgKnightED'25
-          </div>
         </div>
 
         {/* Desktop Navigation */}

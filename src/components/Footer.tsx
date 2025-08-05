@@ -10,16 +10,13 @@ export const Footer = () => {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-8">
             {/* Brand & Event Info */}
             <div className="lg:col-span-2">
-              <div className="flex items-center space-x-3 mb-4">
-                <img 
-                  src="/src/assets/ignighted-logo.svg" 
-                  alt="IgKnightED'25" 
-                  className="h-8 w-auto"
-                />
-                <div className="text-xl font-heading font-bold gradient-text">
-                  IgKnightED'25
-                </div>
-              </div>
+            <div className="flex items-center mb-4">
+              <img 
+                src="/src/assets/ignighted-logo.svg" 
+                alt="IgKnightED'25" 
+                className="h-8 w-auto"
+              />
+            </div>
               
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Where ambition meets acceleration. Join Dubai's premier startup pitch platform 
