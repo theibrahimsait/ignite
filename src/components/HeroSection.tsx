@@ -1,13 +1,12 @@
 import { Button } from '@/components/ui/button';
 import { Calendar, MapPin, ArrowRight, Rocket, Users, Trophy } from 'lucide-react';
-
 interface HeroSectionProps {
   onSectionChange: (section: string) => void;
 }
-
-export const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
-  return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+export const HeroSection = ({
+  onSectionChange
+}: HeroSectionProps) => {
+  return <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       {/* Background Glow */}
       <div className="absolute inset-0 bg-gradient-glow opacity-20"></div>
       
@@ -42,32 +41,18 @@ export const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 fade-in-delay-3">
-            <Button 
-              size="lg"
-              className="glow-blue hover-lift bg-gradient-cta border-0 text-lg px-8 py-6"
-              onClick={() => onSectionChange('apply')}
-            >
+            <Button size="lg" className="glow-blue hover-lift bg-gradient-cta border-0 text-lg px-8 py-6" onClick={() => onSectionChange('apply')}>
               <Rocket className="mr-2" size={20} />
               Apply to Pitch
               <ArrowRight className="ml-2" size={20} />
             </Button>
             
-            <Button 
-              size="lg"
-              variant="outline"
-              className="hover-lift text-lg px-8 py-6 border-primary/30 hover:border-primary"
-              onClick={() => onSectionChange('apply')}
-            >
+            <Button size="lg" variant="outline" className="hover-lift text-lg px-8 py-6 border-primary/30 hover:border-primary" onClick={() => onSectionChange('apply')}>
               <Users className="mr-2" size={20} />
               Become a Partner
             </Button>
             
-            <Button 
-              size="lg"
-              variant="secondary"
-              className="hover-lift text-lg px-8 py-6"
-              onClick={() => onSectionChange('agenda')}
-            >
+            <Button size="lg" variant="secondary" className="hover-lift text-lg px-8 py-6" onClick={() => onSectionChange('agenda')}>
               <Trophy className="mr-2" size={20} />
               View Agenda
             </Button>
@@ -76,22 +61,13 @@ export const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
           {/* Visual Elements */}
           <div className="relative">
             <div className="flex justify-center items-center">
-              <img 
-                src="/bit-logo.svg" 
-                alt="BIT'25" 
-                className="h-32 w-auto filter brightness-0 invert transition-opacity"
-              />
+              <img src="/bit-logo.svg" alt="BIT'25" className="h-20 w-auto opacity-90 hover:opacity-100 transition-opacity" />
             </div>
           </div>
         </div>
       </div>
 
       {/* Scroll Indicator - at very bottom of hero section with mobile spacing */}
-      <div className="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2">
-        <div className="w-6 h-10 border-2 border-primary/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-bounce"></div>
-        </div>
-      </div>
-    </section>
-  );
+      
+    </section>;
 };
