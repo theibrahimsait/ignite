@@ -75,17 +75,11 @@ export const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
 
           {/* Visual Elements */}
           <div className="relative">
-            <div className="flex justify-center items-center gap-8 opacity-80">
+            <div className="flex justify-center items-center">
               <img 
                 src="/src/assets/bit-logo.svg" 
                 alt="BIT'25" 
-                className="h-12 w-auto opacity-60 hover:opacity-100 transition-opacity"
-              />
-              <div className="w-px h-8 bg-border"></div>
-              <img 
-                src="/src/assets/submark.svg" 
-                alt="Event Submark" 
-                className="h-10 w-auto opacity-60 hover:opacity-100 transition-opacity"
+                className="h-20 w-auto filter brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
               />
             </div>
           </div>
