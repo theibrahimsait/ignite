@@ -86,8 +86,8 @@ export const HeroSection = ({ onSectionChange }: HeroSectionProps) => {
         </div>
       </div>
 
-      {/* Scroll Indicator - positioned away from logo */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2" style={{ marginTop: '4rem' }}>
+      {/* Scroll Indicator - positioned at very bottom of screen */}
+      <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-10">
         <div className="w-6 h-10 border-2 border-primary/30 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-bounce"></div>
         </div>
