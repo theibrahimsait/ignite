@@ -1,14 +1,13 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Rocket, Clock, DollarSign, ArrowRight } from 'lucide-react';
-
 interface StartupCalloutProps {
   onSectionChange: (section: string) => void;
 }
-
-export const StartupCallout = ({ onSectionChange }: StartupCalloutProps) => {
-  return (
-    <section className="py-20 relative">
+export const StartupCallout = ({
+  onSectionChange
+}: StartupCalloutProps) => {
+  return <section className="py-20 relative">
       <div className="container mx-auto px-6">
         <Card className="glass-card max-w-4xl mx-auto p-12 text-center relative overflow-hidden">
           {/* Background Glow */}
@@ -33,7 +32,7 @@ export const StartupCallout = ({ onSectionChange }: StartupCalloutProps) => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
               <div className="flex items-center gap-2 text-accent">
                 <DollarSign size={20} />
-                <span className="font-bold text-lg">$3,500 Early Bird</span>
+                <span className="font-bold text-lg">3,500 Early Bird</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Clock size={20} />
@@ -41,11 +40,7 @@ export const StartupCallout = ({ onSectionChange }: StartupCalloutProps) => {
               </div>
             </div>
 
-            <Button 
-              size="lg"
-              className="glow-blue hover-lift bg-gradient-cta border-0 text-xs sm:text-sm lg:text-xl px-3 sm:px-8 lg:px-12 py-4 sm:py-5 lg:py-6 mb-4 w-full sm:w-auto whitespace-nowrap overflow-hidden"
-              onClick={() => onSectionChange('apply')}
-            >
+            <Button size="lg" className="glow-blue hover-lift bg-gradient-cta border-0 text-xs sm:text-sm lg:text-xl px-3 sm:px-8 lg:px-12 py-4 sm:py-5 lg:py-6 mb-4 w-full sm:w-auto whitespace-nowrap overflow-hidden" onClick={() => onSectionChange('apply')}>
               <span className="block sm:hidden">Apply Now – $3,500</span>
               <span className="hidden sm:block">Apply to Pitch – $3,500 Early Bird</span>
               <ArrowRight className="ml-2" size={16} />
@@ -57,6 +52,5 @@ export const StartupCallout = ({ onSectionChange }: StartupCalloutProps) => {
           </div>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
