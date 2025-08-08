@@ -8,10 +8,9 @@ export const HeroSection = ({
 }: HeroSectionProps) => {
   return <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(/lovable-uploads/52c5b453-98ff-4284-8686-6124efe8f685.png)` }}
-      ></div>
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(/lovable-uploads/52c5b453-98ff-4284-8686-6124efe8f685.png)`
+    }}></div>
       
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
@@ -76,7 +75,7 @@ export const HeroSection = ({
 
           {/* Visual Elements */}
           <div className="relative">
-            <div className="flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center gap-3 mx-0 my-[35px]">
               <p className="text-sm text-muted-foreground">In partnership with</p>
               <img src="/bit-logo.svg" alt="BIT'25" className="h-20 w-auto opacity-90 hover:opacity-100 transition-opacity" />
             </div>
