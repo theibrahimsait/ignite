@@ -24,9 +24,7 @@ export const StartupCallout = ({
               <span className="gradient-text">Pitch. Win. Scale.</span>
             </h2>
             
-            <p className="text-xl text-muted-foreground mb-8 fade-in-delay-1">
-              Secure your spot at IgKnightED'25 and transform your startup journey
-            </p>
+            <p className="text-xl text-muted-foreground mb-8 fade-in-delay-1">Secure your spot at IgKnightED'25 and transform your startup journey.</p>
 
             {/* Pricing */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
