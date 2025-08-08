@@ -43,11 +43,12 @@ export const StartupCallout = ({ onSectionChange }: StartupCalloutProps) => {
 
             <Button 
               size="lg"
-              className="glow-blue hover-lift bg-gradient-cta border-0 text-sm sm:text-lg lg:text-xl px-4 sm:px-8 lg:px-12 py-4 sm:py-5 lg:py-6 mb-4 w-full sm:w-auto"
+              className="glow-blue hover-lift bg-gradient-cta border-0 text-xs sm:text-sm lg:text-xl px-3 sm:px-8 lg:px-12 py-4 sm:py-5 lg:py-6 mb-4 w-full sm:w-auto whitespace-nowrap overflow-hidden"
               onClick={() => onSectionChange('apply')}
             >
-              Apply to Pitch – $3,500 Early Bird
-              <ArrowRight className="ml-2" size={20} />
+              <span className="block sm:hidden">Apply Now – $3,500</span>
+              <span className="hidden sm:block">Apply to Pitch – $3,500 Early Bird</span>
+              <ArrowRight className="ml-2" size={16} />
             </Button>
             
             <p className="text-sm text-muted-foreground fade-in-delay-3">
