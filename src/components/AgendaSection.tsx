@@ -109,7 +109,7 @@ export const AgendaSection = () => {
                     </div>
                     
                     {/* Timeline Dot */}
-                    <div className="absolute -left-6 md:-left-12 top-8 w-4 h-4 bg-primary rounded-full border-4 border-background"></div>
+                    <div className="absolute left-2 md:left-18 top-8 w-4 h-4 bg-primary rounded-full border-4 border-background"></div>
                     
                     <div className="flex items-start gap-4">
                       <div className="flex-shrink-0 p-2 rounded-lg bg-primary/10 border border-primary/20">
