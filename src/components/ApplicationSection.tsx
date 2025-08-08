@@ -54,30 +54,24 @@ export const ApplicationSection = () => {
       </div>
 
       <div>
-        <Label htmlFor="linkedin">LinkedIn URL *</Label>
-        <Input id="linkedin" placeholder="https://linkedin.com/in/yourprofile" className="mt-1" />
+        <Label htmlFor="websiteUrl">Website URL *</Label>
+        <Input id="websiteUrl" placeholder="https://yourcompany.com" className="mt-1" />
       </div>
 
       <div>
-        <Label htmlFor="productSummary">Product Summary *</Label>
-        <Textarea 
-          id="productSummary" 
-          placeholder="Describe your product in 2-3 sentences. What problem does it solve and how?"
-          className="mt-1 min-h-[100px]"
-        />
-      </div>
-
-      <div>
-        <Label htmlFor="pitchDeck">Pitch Deck Upload *</Label>
+        <Label htmlFor="videoApplication">Video Application *</Label>
         <div className="mt-1 border-2 border-dashed border-border rounded-lg p-6 text-center hover:border-primary/50 transition-colors cursor-pointer">
           <Upload className="mx-auto mb-2 text-muted-foreground" size={24} />
           <p className="text-sm text-muted-foreground">
-            Drop your pitch deck here or click to browse
+            Upload your 2-3 minute video application
           </p>
           <p className="text-xs text-muted-foreground mt-1">
-            PDF format preferred, max 20MB
+            MP4 format preferred, max 100MB
           </p>
         </div>
+        <p className="text-xs text-muted-foreground mt-2">
+          Please introduce yourself, your company, and explain why you should be selected for IgKnightED'25
+        </p>
       </div>
 
       <Button className="w-full glow-blue hover-lift bg-gradient-cta border-0">
@@ -266,24 +260,19 @@ export const ApplicationSection = () => {
 
           <Card className="glass-card p-8">
             <Tabs value={selectedTab} onValueChange={setSelectedTab}>
-              <TabsList className="grid w-full grid-cols-4 mb-8">
-                <TabsTrigger value="startup" className="flex items-center gap-2">
-                  <Rocket size={16} />
-                  <span className="hidden sm:inline">Startup</span>
-                </TabsTrigger>
-                <TabsTrigger value="investor" className="flex items-center gap-2">
-                  <Users size={16} />
-                  <span className="hidden sm:inline">Investor</span>
-                </TabsTrigger>
-                <TabsTrigger value="sponsor" className="flex items-center gap-2">
-                  <Building size={16} />
-                  <span className="hidden sm:inline">Sponsor</span>
-                </TabsTrigger>
-                <TabsTrigger value="media" className="flex items-center gap-2">
-                  <Camera size={16} />
-                  <span className="hidden sm:inline">Media</span>
-                </TabsTrigger>
-              </TabsList>
+              <div className="mb-8 text-center">
+                <Button 
+                  size="lg" 
+                  className="glow-blue hover-lift bg-gradient-cta border-0 text-lg px-8 py-4"
+                  onClick={() => setSelectedTab('startup')}
+                >
+                  <Rocket className="mr-2" size={20} />
+                  Apply as Startup
+                </Button>
+                <p className="text-sm text-muted-foreground mt-4">
+                  Currently accepting applications from startups only
+                </p>
+              </div>
 
               <TabsContent value="startup">
                 <div className="mb-6">
@@ -293,36 +282,6 @@ export const ApplicationSection = () => {
                   </p>
                 </div>
                 <StartupForm />
-              </TabsContent>
-
-              <TabsContent value="investor">
-                <div className="mb-6">
-                  <h3 className="text-2xl font-heading font-bold mb-2">Investor Interest</h3>
-                  <p className="text-muted-foreground">
-                    Join our investor panel and discover the next generation of fintech innovators.
-                  </p>
-                </div>
-                <InvestorForm />
-              </TabsContent>
-
-              <TabsContent value="sponsor">
-                <div className="mb-6">
-                  <h3 className="text-2xl font-heading font-bold mb-2">Sponsor Inquiry</h3>
-                  <p className="text-muted-foreground">
-                    Partner with IgKnightED'25 and connect with innovative startups and industry leaders.
-                  </p>
-                </div>
-                <SponsorForm />
-              </TabsContent>
-
-              <TabsContent value="media">
-                <div className="mb-6">
-                  <h3 className="text-2xl font-heading font-bold mb-2">Press & Media</h3>
-                  <p className="text-muted-foreground">
-                    Cover IgKnightED'25 and get exclusive access to startup pitches and industry insights.
-                  </p>
-                </div>
-                <MediaForm />
               </TabsContent>
             </Tabs>
           </Card>

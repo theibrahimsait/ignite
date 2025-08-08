@@ -12,23 +12,27 @@ export const HeroSection = ({
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-5xl mx-auto">
-          {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold mb-6 fade-in">
-            <span className="block">Rise. Pitch.</span>
-            <span className="block gradient-text">Conquer.</span>
+          {/* IgKnightED Logo - Now prominent */}
+          <div className="mb-8 fade-in">
+            <img src="/ignighted-logo.svg" alt="IgKnightED'25" className="h-32 md:h-40 mx-auto" />
+          </div>
+          
+          {/* Main Headline - Smaller and single line */}
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 fade-in-delay-1">
+            <span className="gradient-text">Rise. Pitch. Conquer.</span>
           </h1>
           
           {/* Subheading with typewriter effect */}
-          <div className="text-xl md:text-2xl text-muted-foreground mb-4 fade-in-delay-1">
+          <div className="text-xl md:text-2xl text-muted-foreground mb-4 fade-in-delay-2">
             <span className="typewriter">Dubai Awaits the Next Fintech Icon</span>
           </div>
           
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 fade-in-delay-2">
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 fade-in-delay-3">
             Welcome to <strong className="text-primary">IgKnightED'25</strong> — where ambition meets acceleration
           </p>
 
           {/* Event Details */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12 fade-in-delay-2">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12 fade-in-delay-4">
             <div className="flex items-center gap-2 text-foreground">
               <Calendar className="text-primary" size={20} />
               <span className="font-medium">17–19 November 2025</span>
@@ -40,7 +44,7 @@ export const HeroSection = ({
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 fade-in-delay-3">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 fade-in-delay-5">
             <Button size="lg" className="glow-blue hover-lift bg-gradient-cta border-0 text-lg px-8 py-6" onClick={() => onSectionChange('apply')}>
               <Rocket className="mr-2" size={20} />
               Apply to Pitch
