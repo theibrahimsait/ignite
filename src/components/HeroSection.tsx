@@ -16,6 +16,9 @@ export const HeroSection = ({
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
       
+      {/* Gradient Overlay for transition */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/80"></div>
+      
       {/* Background Glow */}
       <div className="absolute inset-0 bg-gradient-glow opacity-20"></div>
       
