@@ -62,12 +62,7 @@ export const HeroSection = ({
               <ArrowRight className="ml-2" size={20} />
             </Button>
             
-            <Button size="lg" variant="outline" className="hover-lift text-lg px-8 py-6 border-primary/30 hover:border-primary" onClick={() => onSectionChange('apply')}>
-              <Users className="mr-2" size={20} />
-              Become a Partner
-            </Button>
-            
-            <Button size="lg" variant="secondary" className="hover-lift text-lg px-8 py-6" onClick={() => onSectionChange('agenda')}>
+            <Button size="lg" variant="outline" className="hover-lift text-lg px-8 py-6 border-primary/30 hover:border-primary" onClick={() => onSectionChange('agenda')}>
               <Trophy className="mr-2" size={20} />
               View Agenda
             </Button>
