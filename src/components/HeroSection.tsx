@@ -71,7 +71,7 @@ export const HeroSection = ({
           {/* Visual Elements */}
           <div className="relative">
             <div className="flex flex-col items-center gap-3 mx-0 my-[35px]">
-              <p className="text-sm text-muted-foreground">In partnership with</p>
+              <p className="text-sm text-muted-foreground">in association with</p>
               <img src="/bit-logo.svg" alt="BIT'25" className="h-20 w-auto opacity-90 hover:opacity-100 transition-opacity" />
             </div>
           </div>
