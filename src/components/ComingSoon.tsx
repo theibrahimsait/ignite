@@ -17,10 +17,10 @@ export const ComingSoon = ({ onAdminLogin }: ComingSoonProps) => {
       ></div>
       
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/75"></div>
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/90"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-black/95"></div>
       
       {/* Background Glow */}
       <div className="absolute inset-0 bg-gradient-glow opacity-30"></div>
@@ -30,11 +30,11 @@ export const ComingSoon = ({ onAdminLogin }: ComingSoonProps) => {
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-4xl mx-auto">
             {/* IgKnightED Logo */}
-            <div className="mb-12 fade-in">
+            <div className="mb-8 mt-8 fade-in">
               <img 
                 src="/ignighted-logo.svg" 
                 alt="IgKnightED'25" 
-                className="h-32 md:h-48 mx-auto opacity-90" 
+                className="h-24 md:h-32 mx-auto opacity-90" 
               />
             </div>
             
