@@ -1,37 +1,28 @@
 import { Card } from '@/components/ui/card';
 import { CheckCircle, Target, Cog, TrendingUp, Users, Scale } from 'lucide-react';
-
 export const JudgingSection = () => {
-  const criteria = [
-    {
-      icon: <Target className="text-primary" size={24} />,
-      title: "Market problem clarity & founder-market fit",
-      description: "Clear understanding of the problem and the founder's unique position to solve it"
-    },
-    {
-      icon: <Cog className="text-primary" size={24} />,
-      title: "Technology differentiation",
-      description: "Innovative technology stack and competitive advantages"
-    },
-    {
-      icon: <TrendingUp className="text-primary" size={24} />,
-      title: "Traction and business model",
-      description: "Proven market validation and sustainable revenue streams"
-    },
-    {
-      icon: <Scale className="text-primary" size={24} />,
-      title: "Scalability and market potential",
-      description: "Ability to scale operations and capture significant market share"
-    },
-    {
-      icon: <Users className="text-primary" size={24} />,
-      title: "Team strength",
-      description: "Experienced team with complementary skills and execution capability"
-    }
-  ];
-
-  return (
-    <section className="py-20 relative">
+  const criteria = [{
+    icon: <Target className="text-primary" size={24} />,
+    title: "Market problem clarity & founder-market fit",
+    description: "Clear understanding of the problem and the founder's unique position to solve it"
+  }, {
+    icon: <Cog className="text-primary" size={24} />,
+    title: "Technology differentiation",
+    description: "Innovative technology stack and competitive advantages"
+  }, {
+    icon: <TrendingUp className="text-primary" size={24} />,
+    title: "Traction and business model",
+    description: "Proven market validation and sustainable revenue streams"
+  }, {
+    icon: <Scale className="text-primary" size={24} />,
+    title: "Scalability and market potential",
+    description: "Ability to scale operations and capture significant market share"
+  }, {
+    icon: <Users className="text-primary" size={24} />,
+    title: "Team strength",
+    description: "Experienced team with complementary skills and execution capability"
+  }];
+  return <section className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -46,8 +37,9 @@ export const JudgingSection = () => {
 
           {/* Criteria Cards */}
           <div className="space-y-6">
-            {criteria.map((criterion, index) => (
-              <Card key={index} className="glass-card hover-lift p-6 fade-in" style={{animationDelay: `${index * 0.1}s`}}>
+            {criteria.map((criterion, index) => <Card key={index} className="glass-card hover-lift p-6 fade-in" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 p-3 rounded-full bg-primary/10 border border-primary/20">
                     {criterion.icon}
@@ -64,8 +56,7 @@ export const JudgingSection = () => {
                     </p>
                   </div>
                 </div>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           {/* Additional Info */}
@@ -82,11 +73,11 @@ export const JudgingSection = () => {
               <div className="flex flex-wrap justify-center gap-4 text-sm">
                 <div className="flex items-center gap-2">
                   <CheckCircle className="text-accent" size={16} />
-                  <span>6-minute pitch presentation</span>
+                  <span>5-minute pitch presentation</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="text-accent" size={16} />
-                  <span>5-minute Q&A session</span>
+                  <span>3-minute Q&A session</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="text-accent" size={16} />
@@ -97,6 +88,5 @@ export const JudgingSection = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
