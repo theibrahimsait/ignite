@@ -1,20 +1,16 @@
 import { Calendar, MapPin, Shield } from 'lucide-react';
 import { AdminAccess } from './AdminAccess';
-
 interface ComingSoonProps {
   onAdminLogin: () => void;
 }
-
-export const ComingSoon = ({ onAdminLogin }: ComingSoonProps) => {
-  return (
-    <div className="min-h-screen flex flex-col relative overflow-hidden">
+export const ComingSoon = ({
+  onAdminLogin
+}: ComingSoonProps) => {
+  return <div className="min-h-screen flex flex-col relative overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-        style={{
-          backgroundImage: `url(/lovable-uploads/52c5b453-98ff-4284-8686-6124efe8f685.png)`
-        }}
-      ></div>
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(/lovable-uploads/52c5b453-98ff-4284-8686-6124efe8f685.png)`
+    }}></div>
       
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/75"></div>
@@ -31,11 +27,7 @@ export const ComingSoon = ({ onAdminLogin }: ComingSoonProps) => {
           <div className="max-w-4xl mx-auto">
             {/* IgKnightED Logo */}
             <div className="mb-8 mt-8 fade-in">
-              <img 
-                src="/ignighted-logo.svg" 
-                alt="IgKnightED'25" 
-                className="h-24 md:h-32 mx-auto opacity-90" 
-              />
+              <img src="/ignighted-logo.svg" alt="IgKnightED'25" className="h-24 md:h-32 mx-auto opacity-90" />
             </div>
             
             {/* Mysterious Heading */}
@@ -68,14 +60,7 @@ export const ComingSoon = ({ onAdminLogin }: ComingSoonProps) => {
             </div>
 
             {/* Partnership */}
-            <div className="fade-in-delay-5">
-              <p className="text-sm text-muted-foreground mb-4">in association with</p>
-              <img 
-                src="/bit-logo.svg" 
-                alt="BIT'25" 
-                className="h-16 w-auto mx-auto opacity-80" 
-              />
-            </div>
+            
           </div>
         </div>
       </div>
@@ -86,6 +71,5 @@ export const ComingSoon = ({ onAdminLogin }: ComingSoonProps) => {
           <AdminAccess onAdminLogin={onAdminLogin} />
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
