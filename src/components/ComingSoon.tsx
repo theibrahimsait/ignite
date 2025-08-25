@@ -9,7 +9,7 @@ export const ComingSoon = ({
   return <div className="min-h-screen flex flex-col relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: `url(/lovable-uploads/52c5b453-98ff-4284-8686-6124efe8f685.png)`
+      backgroundImage: `url(/uploads/52c5b453-98ff-4284-8686-6124efe8f685.png)`
     }}></div>
       
       {/* Dark Overlay */}
